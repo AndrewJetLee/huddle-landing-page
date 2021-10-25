@@ -8,4 +8,11 @@ export const StyledButton = styled.button`
     font-size: 1rem;
     font-weight: 700;
     padding: 15px 60px;
+    background-color: ${({bg}) => bg || "white"};
+    color: ${({color}) => color || "#333"};
+
+    &:hover {
+        opacity: 0.9;
+        transform: scale(0.98)
+    }
 `
